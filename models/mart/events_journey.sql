@@ -1,3 +1,6 @@
+{{ config(
+    materialized='table'
+) }}
 with customer_events as (
     select
         u.user_id as user_id,  -- Specify the alias 'u' here

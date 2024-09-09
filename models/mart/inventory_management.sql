@@ -1,3 +1,6 @@
+{{ config(
+    materialized='table'
+) }}
 select
     p.name as product_name,
     dc.name as distribution_center,

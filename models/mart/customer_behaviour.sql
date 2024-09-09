@@ -1,4 +1,6 @@
-SELECT 
+{{ config(
+    materialized='table'
+) }}SELECT 
     u.user_id,
     CONCAT(u.first_name, ' ', u.last_name) AS full_name,  
     e.event_type,
